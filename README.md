@@ -124,11 +124,12 @@ dotnet run
 **Tools and Languages Used:**
 
 <p align="left">
-  <img src="https://img.icons8.com/color/48/000000/c-sharp-logo.png" title="C#"/>
-  <img src="https://img.icons8.com/fluency/48/000000/visual-studio-2019.png" title="Visual Studio"/>
-  <img src="https://img.icons8.com/ios-filled/50/000000/net-framework.png" title=".NET 8"/>
-  <img src="https://img.icons8.com/color/48/bootstrap.png" title="Bootstrap"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" title="C#" width="48"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" title="Visual Studio" width="48"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" title=".NET 8" width="48"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" title="Bootstrap" width="48"/>
 </p>
+
 
 ---
 
