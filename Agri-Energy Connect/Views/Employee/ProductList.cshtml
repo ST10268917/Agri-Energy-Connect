@@ -20,9 +20,8 @@
                 </select>
             </div>
             <div class="col-md-2 mb-2">
-                <select asp-for="SelectedCategoryId" asp-items="@(new SelectList(Model.Categories, "CategoryId", "Name"))" class="form-control rounded-pill">
-                    <option value="">Category</option>
-                </select>
+                <input type="text" name="categoryName" value="@Model.CategoryName" placeholder="Category" class="form-control rounded-pill" />
+
             </div>
             <div class="col-md-2 mb-2">
                 <input asp-for="StartDate" type="date" class="form-control rounded-pill" placeholder="Start Date" />

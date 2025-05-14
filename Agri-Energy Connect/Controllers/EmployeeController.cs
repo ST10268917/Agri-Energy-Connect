@@ -78,7 +78,7 @@ namespace Agri_Energy_Connect.Controllers
         }
 
         [Authorize(Roles = "Employee")]
-        public async Task<IActionResult> ProductList(string selectedFarmerId, int? selectedCategoryId, DateTime? startDate, DateTime? endDate, string search)
+        public async Task<IActionResult> ProductList(string selectedFarmerId, string categoryName, DateTime? startDate, DateTime? endDate, string search)
         {
             var farmers = await _userManager.GetUsersInRoleAsync("Farmer");
             var categories = _context.Categories.ToList();
@@ -99,10 +99,11 @@ namespace Agri_Energy_Connect.Controllers
             }
 
 
-            if (selectedCategoryId.HasValue)
+            if (!string.IsNullOrWhiteSpace(categoryName))
             {
-                products = products.Where(p => p.CategoryId == selectedCategoryId.Value);
+                products = products.Where(p => p.Category.Name.ToLower().Contains(categoryName.Trim().ToLower()));
             }
+
 
             if (startDate.HasValue)
             {
@@ -120,7 +121,7 @@ namespace Agri_Energy_Connect.Controllers
                 Categories = categories,
                 FilteredProducts = products.ToList(),
                 SelectedFarmerId = selectedFarmerId,
-                SelectedCategoryId = selectedCategoryId,
+                CategoryName = categoryName,
                 StartDate = startDate,
                 EndDate = endDate,
                 Search = search
