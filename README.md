@@ -96,15 +96,22 @@ dotnet run
 
 **Home Page**: Welcoming banner with a hero image, carousel, and "Join Now" button.  
 ![image](https://github.com/user-attachments/assets/a5db47a6-c70d-4000-a71d-3be0775e7efd)
-![image](https://github.com/user-attachments/assets/2081d5d0-cd73-4e45-93a4-90d1db88f7ed)
+![image](https://github.com/user-attachments/assets/c315d48f-68ca-40ba-932b-fcac3ca494b0)
+
 
 
 **Login Page**: Clean and centered login/register interface with secure validation.  
 ![image](https://github.com/user-attachments/assets/27f14828-55e9-4827-9fa8-1c20562c7c8b)
 
 
-**My Products Page**: Card layout showing farmer-specific products with image, price, quantity, and date.  
-**Products List Page**: Employee view with all products and advanced filters by name, category, date, and farmer.  
+**My Products Page**: Card layout showing farmer-specific products with image, price, quantity, date etc.  
+![image](https://github.com/user-attachments/assets/f46414ba-27d5-404d-8dd5-cbb7f06023b8)
+![image](https://github.com/user-attachments/assets/18e2211c-7d95-4c31-8e34-0d23c9722689)
+
+
+**Products List Page**: Employee view with all products and advanced filters by name, category, date, and farmer. 
+![image](https://github.com/user-attachments/assets/ee14c396-f3e7-4515-ab24-69ed2bc262ab)
+
 **Farmers Page**: Employee interface showing a list of all registered farmers.
 ![image](https://github.com/user-attachments/assets/b0260c41-80ad-402a-af62-c909c97a337c)
 ![image](https://github.com/user-attachments/assets/591c3bb0-0961-4848-a96a-c5dabbf96baa)
@@ -135,7 +142,7 @@ dotnet run
 
 ## 🟢 Coding Activity
 - Code tracked using Git
-- Design pattern usage: Singleton, Strategy, Factory
+- Design pattern usage: Singleton, Factory
 - Adheres to N-Tier architecture (Presentation, Business, Data)
 
 ---
