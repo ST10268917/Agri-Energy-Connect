@@ -1,11 +1,11 @@
-# Agri-Energy Connect
+# 🌿 Agri-Energy Connect
 
-## 🌿 Introduction
+## 🟢 Introduction
 Agri-Energy Connect is a prototype web application built using ASP.NET Core MVC that facilitates collaboration between farmers and agricultural employees. The platform streamlines product management and provides role-based access to ensure a smooth, secure, and user-friendly experience.
 
 ---
 
-## 🟢 Functionality Requirements
+## 🟢 Functional Requirements
 - Relational database integration for storing user, category, and product data
 - Two distinct user roles: **Farmer** and **Employee**
 - Farmers can add and manage their products
@@ -84,19 +84,31 @@ dotnet run
 - Admin log viewer using Singleton logger
 
 ### Planned
-- Email notifications (Observer)
-- Exporting filtered product data to Excel
-- Mobile responsive improvements
+- Email notifications (Observer Design Pattern)
+- Educational and Training resources
+- Interactive forums and discussion boards for farmers
+- Project collaboration and funding oppurtunities
+- Mobile responsive and UI improvements
 
 ---
 
 ## 🟢 Images (Page Descriptions)
 
-**Home Page**: Welcoming banner with a hero image, carousel, and "Join Now" CTA.  
+**Home Page**: Welcoming banner with a hero image, carousel, and "Join Now" button.  
+![image](https://github.com/user-attachments/assets/ad7cdeff-81c8-4f6f-9549-6183a338f482)
+![image](https://github.com/user-attachments/assets/2081d5d0-cd73-4e45-93a4-90d1db88f7ed)
+
+
 **Login Page**: Clean and centered login/register interface with secure validation.  
+![image](https://github.com/user-attachments/assets/9be55896-acff-4997-a023-9030ee65d194)
+
 **My Products Page**: Card layout showing farmer-specific products with image, price, quantity, and date.  
 **Products List Page**: Employee view with all products and advanced filters by name, category, date, and farmer.  
 **Farmers Page**: Employee interface showing a list of all registered farmers.
+![image](https://github.com/user-attachments/assets/31e183b5-a2b0-4ee1-a71f-873fa47928ca)
+![image](https://github.com/user-attachments/assets/67413eb4-8cce-4516-a34a-d92c30672649)
+
+
 
 ---
 
