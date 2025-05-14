@@ -100,13 +100,15 @@ dotnet run
 
 
 **Login Page**: Clean and centered login/register interface with secure validation.  
-![image](https://github.com/user-attachments/assets/9be55896-acff-4997-a023-9030ee65d194)
+![image](https://github.com/user-attachments/assets/27f14828-55e9-4827-9fa8-1c20562c7c8b)
+
 
 **My Products Page**: Card layout showing farmer-specific products with image, price, quantity, and date.  
 **Products List Page**: Employee view with all products and advanced filters by name, category, date, and farmer.  
 **Farmers Page**: Employee interface showing a list of all registered farmers.
-![image](https://github.com/user-attachments/assets/31e183b5-a2b0-4ee1-a71f-873fa47928ca)
-![image](https://github.com/user-attachments/assets/67413eb4-8cce-4516-a34a-d92c30672649)
+![image](https://github.com/user-attachments/assets/b0260c41-80ad-402a-af62-c909c97a337c)
+![image](https://github.com/user-attachments/assets/591c3bb0-0961-4848-a96a-c5dabbf96baa)
+
 
 
 
@@ -137,7 +139,7 @@ dotnet run
 
 ---
 
-## ✈🟢 Get Started
+## 🟢 Get Started
 - Use the Add Farmer feature to register farmers  
 - Use My Products to create and track inventory  
 - Employees can browse and filter available goods efficiently
