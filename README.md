@@ -95,7 +95,7 @@ dotnet run
 ## 🟢 Images (Page Descriptions)
 
 **Home Page**: Welcoming banner with a hero image, carousel, and "Join Now" button.  
-![image](https://github.com/user-attachments/assets/ad7cdeff-81c8-4f6f-9549-6183a338f482)
+![image](https://github.com/user-attachments/assets/a5db47a6-c70d-4000-a71d-3be0775e7efd)
 ![image](https://github.com/user-attachments/assets/2081d5d0-cd73-4e45-93a4-90d1db88f7ed)
 
 
