@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ya5cvv0NTKccAdKfsLvh6NZvNA85Mx+sScJzQSEs1zM=",
+  "Hash": "BBT+Ii9WFUFMHR8z70PH/6Z4AGWUvp9besmC1NMGYiw=",
   "Source": "Agri-Energy Connect",
   "BasePath": "_content/Agri-Energy Connect",
   "Mode": "Default",
@@ -2409,6 +2409,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\banner.png"
+    },
+    {
+      "Identity": "C:\\Users\\Hamza\\source\\repos\\Agri-Energy Connect\\Agri-Energy Connect\\wwwroot\\uploads\\f158ae95-8346-42be-90c1-17a3ae267f7a.jpeg",
+      "SourceId": "Agri-Energy Connect",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hamza\\source\\repos\\Agri-Energy Connect\\Agri-Energy Connect\\wwwroot\\",
+      "BasePath": "_content/Agri-Energy Connect",
+      "RelativePath": "uploads/f158ae95-8346-42be-90c1-17a3ae267f7a.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\f158ae95-8346-42be-90c1-17a3ae267f7a.jpeg"
     },
     {
       "Identity": "C:\\Users\\Hamza\\source\\repos\\Agri-Energy Connect\\Agri-Energy Connect\\wwwroot\\uploads\\image1.jpg",

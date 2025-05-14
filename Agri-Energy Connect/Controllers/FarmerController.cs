@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc;
 using Agri_Energy_Connect.Data;
 using Microsoft.EntityFrameworkCore;
+using Agri_Energy_Connect.Factories;
+using Agri_Energy_Connect.Services;
 
 [Authorize(Roles = "Farmer")]
 public class FarmerController : Controller
@@ -77,20 +79,22 @@ public class FarmerController : Controller
             await _context.SaveChangesAsync(); // Save to generate CategoryId
         }
 
-        var product = new Product
-        {
-            Name = model.Name,
-            Description = model.Description,
-            Price = model.Price,
-            Quantity = model.Quantity,
-            Availability = model.Availability,
-            CategoryId = category.CategoryId,
-            ProductionDate = model.ProductionDate,
-            ImageUrl = "/uploads/" + fileName,
-            FarmerId = user.Id
-        };
+        var imageUrl = "/uploads/" + fileName;
+
+        var product = ProductFactory.Create(
+            model.Name,
+            model.Description,
+            model.Price,
+            model.Quantity,
+            model.Availability,
+            model.CategoryName,
+            model.ProductionDate,
+            imageUrl,
+            user.Id
+        );
 
         _context.Products.Add(product);
+        AppLogger.Instance.Log($"New product added by user {user.Email}: {model.Name}");
         await _context.SaveChangesAsync();
 
         return RedirectToAction("MyProducts");
