@@ -63,12 +63,21 @@ dotnet run
 - View all own products in a card-based layout
 - Upload and store product images securely
 
+Farmer Login:
+email = "a@j.com";
+password = "Loop1234@";
+
 ### 💼 Employee
 - Add new farmers with credentials
 - View all farmers
 - View and filter products by name, category, date, and farmer
 
+Employee Login:
+email = "admin@admin.com";
+password = "Admin1234#";
+
 ---
+
 
 ## 🟢 Roadmap
 
