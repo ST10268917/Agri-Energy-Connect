@@ -1,0 +1,91 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Agri_Energy_Connect.Areas.Identity.Data
+@using Agri_Energy_Connect.Models.ViewModels
+@inject UserManager<ApplicationUser> UserManager
+@inject SignInManager<ApplicationUser> SignInManager
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Agri-Energy-Connect</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Agri_Energy_Connect.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold text-success" asp-area="" asp-controller="Home" asp-action="Index">
+                    Agri-Energy Connect
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="mainNavbar">
+                    <!-- LEFT: Navigation links -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            var currentUser = await UserManager.GetUserAsync(User);
+                            if (await UserManager.IsInRoleAsync(currentUser, "Employee"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" asp-controller="Employee" asp-action="FarmerList">Farmers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" asp-controller="Employee" asp-action="ProductList">Products</a>
+                                </li>
+                            }
+
+                            if (await UserManager.IsInRoleAsync(currentUser, "Farmer"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" asp-controller="Farmer" asp-action="MyProducts">My Products</a>
+                                </li>
+                            }
+                        }
+                    </ul>
+
+                    <!-- RIGHT: Login / Logout -->
+                    <div class="d-flex align-items-center">
+                        <partial name="_LoginPartial.cshtml" />
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+    </header>
+    <div class="d-flex flex-column min-vh-100">
+        <div class="container flex-grow-1">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <footer class="bg-dark text-white pt-4 pb-2 w-100 mt-auto">
+            <div class="text-center px-3">
+                <h5 class="fw-bold">Agri-Energy Connect</h5>
+                <p class="text-muted small mb-0">&copy; 2025 Agri-Energy Connect. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

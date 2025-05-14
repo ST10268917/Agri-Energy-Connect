@@ -1,0 +1,116 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Hero Section Styling -->
+<style>
+    .hero-section {
+        background: url('/uploads/banner.png') no-repeat center center;
+        background-size: cover;
+        width: 100vw;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* center vertically */
+        align-items: flex-start; /* left align */
+        text-align: left;
+        padding-left: 6%;
+        position: relative;
+    }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #2e7d32;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-section p {
+            font-size: 1.3rem;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255,255,255,0.2);
+            z-index: 0;
+        }
+
+        .hero-section > * {
+            position: relative;
+            z-index: 1;
+        }
+
+
+
+        .custom-carousel {
+            max-width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+        }
+
+</style>
+
+<!-- Hero Section -->
+<div class="hero-section position-relative">
+    <h1>AGRI-ENERGY CONNECT</h1>
+    <p>Empowering Agriculture. Energizing Communities.</p>
+</div>
+
+<!-- About + Carousel Section -->
+<div class="container my-5">
+    <div class="row align-items-center">
+        <!-- Carousel LEFT -->
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div id="carouselExampleIndicators" class="carousel slide custom-carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/uploads/image1.jpg" class="d-block w-100 rounded shadow-sm" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/uploads/image2.jpg" class="d-block w-100 rounded shadow-sm" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/uploads/image3.jpeg" class="d-block w-100 rounded shadow-sm" alt="Slide 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- About Us RIGHT -->
+        <div class="col-md-6">
+            <h2 class="text-success fw-bold">About Us</h2>
+            <p class="text-muted">
+                Agri-Energy Connect is a platform dedicated to uniting farmers and communities through smart technology and sustainable solutions.
+                We aim to simplify agricultural logistics, promote local trade, and empower producers across the region.
+                With a blend of innovation and tradition, we help bridge the gap between field and future.
+            </p>
+
+            <a asp-controller="Home" asp-action="JoinConfirmation" class="btn btn-success mt-3 px-4">
+                Join Now
+            </a>
+
+        </div>
+    </div>
+</div>
+
